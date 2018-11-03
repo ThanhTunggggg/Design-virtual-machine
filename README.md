@@ -14,7 +14,7 @@ Requirements:
 
 ```
 $ make desktop
-$ AWS_ACCESS_KEY_ID='' AWS_SECRET_ACCESS_KEY='' make upload/desktop
+$ ACCESS_KEY_ID='' SECRET_ACCESS_KEY='' make upload/desktop
 ```
 
 Then, open VirtualBox and "Import Appliance" the Python Box file. 
