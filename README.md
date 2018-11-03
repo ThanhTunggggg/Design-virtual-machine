@@ -1,4 +1,4 @@
-# Juice Box
+# Python Box virtual machine
 
 Designing virtual machine for Python programming using VirtualBox
 
