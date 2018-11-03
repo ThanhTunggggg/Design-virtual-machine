@@ -24,10 +24,10 @@ clean/desktop:
 upload: upload/desktop/ova
 
 upload/desktop:
-	s3cmd --access_key=$(AWS_ACCESS_KEY_ID) --secret_key=$(AWS_SECRET_ACCESS_KEY) put $(DESKTOP_BOX_PATH) $(DESKTOP_OVA_PATH) s3://$(BUCKET_NAME)/
+	s3cmd --access_key=$(ACCESS_KEY_ID) --secret_key=$(SECRET_ACCESS_KEY) put $(DESKTOP_BOX_PATH) $(DESKTOP_OVA_PATH) s3://$(BUCKET_NAME)/
 
 upload/desktop/box:
-	s3cmd --access_key=$(AWS_ACCESS_KEY_ID) --secret_key=$(AWS_SECRET_ACCESS_KEY) put $(DESKTOP_BOX_PATH) s3://$(BUCKET_NAME)/
+	s3cmd --access_key=$(ACCESS_KEY_ID) --secret_key=$(SECRET_ACCESS_KEY) put $(DESKTOP_BOX_PATH) s3://$(BUCKET_NAME)/
 
 upload/desktop/ova:
-	s3cmd --access_key=$(AWS_ACCESS_KEY_ID) --secret_key=$(AWS_SECRET_ACCESS_KEY) put $(DESKTOP_OVA_PATH) s3://$(BUCKET_NAME)/
+	s3cmd --access_key=$(ACCESS_KEY_ID) --secret_key=$(SECRET_ACCESS_KEY) put $(DESKTOP_OVA_PATH) s3://$(BUCKET_NAME)/
